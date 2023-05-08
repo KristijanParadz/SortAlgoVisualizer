@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortAlgo Visualization</title>
+</head>
+<body>
+    <div className='background'>
+        <header>
+            <div class='algorithm-picker'>
+              <div class='text'>Algorithm</div>
+              <select class='select-algo'>
+                  <option>Insertion Sort</option>
+                  <option>Selection Sort</option>
+                  <option>Bubble Sort</option>
+              </select>
+            </div>
+            <div class='array-length-container'>
+                <div class='text'>Array Length</div>
+                <input  min="3" max="16" class='array-length' type="number" value="8" oninput="if(this.value>16)this.value=16; if(this.value<0)this.value=0;"></input>
+            </div>
+            
+            <button class='start'>Start</button>
+        </header>
+
+          <div class='array'>
+            
+          </div>
+
+    </div>
+
+
+</body>
+</html>

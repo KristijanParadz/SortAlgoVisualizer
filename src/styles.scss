@@ -1,0 +1,115 @@
+:root {
+  --down_length: 20rem;
+}
+
+
+body,html{
+    margin:0;
+    -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none;
+    background-color: rgb(207, 204, 204);
+  }
+  
+  .background{
+    height: 100vh;
+    width:100vw;
+  }
+  
+  .algorithm-picker{
+    margin:15px;
+  }
+  
+  .text{
+    margin-bottom: 7px;
+    color:gray
+  }
+  
+  .array-length-container{
+    margin:15px 20px;
+  }
+  
+  header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 243, 194);
+    box-shadow: 2px 2px 2px 2px rgb(133, 128, 128) ;
+  }
+  
+  .start{
+    font-size: 1.2em;
+    padding:10px 25px;
+    border-radius: 5px;
+    background-color:rgb(68, 197, 230);
+    color:rgb(253, 253, 253);
+    border: 0;
+    cursor:pointer;
+    align-self: flex-end;
+    margin-bottom: 15px;
+
+    &:hover{
+      background-color: rgb(102, 151, 231);
+    }
+  }
+  
+  .array-length{
+    color:white;
+    background-color:#4d5061;
+    padding:8px 15px;
+    border: 1px solid rgb(178, 180, 212); 
+    border-radius: 3px;
+  }
+  
+  .select-algo{
+    border: 1px solid rgb(178, 180, 212); 
+    border-radius: 3px;
+    color:white;
+    background-color:#4d5061 ;
+    padding:7px 15px;
+    cursor: pointer;
+  }
+
+
+  .array{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin:20px 0px;
+  }
+
+  .broj{
+    height: 1px;
+    min-width:2.2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(125, 238, 238);
+    font-size: 1.3em;
+    border:none;
+    color:rgb(30, 180, 50);
+    outline:none;
+    transition: all ease 0.6s;
+    margin:4px;
+    border-radius: 4px;
+    position:relative;
+    top:0;
+    left:0;
+  }
+
+  @media(max-height:650px){
+    :root{
+      --down_length:10rem;
+    }
+  }
+
+  @media(max-height:500px){
+    :root{
+      --down_length:5rem;
+    }
+  }
